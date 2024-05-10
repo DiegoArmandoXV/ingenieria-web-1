@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+
+    <title>New Product</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="logo-theStore" class="logo" width="170px"></a>
+        <nav>
+            <ul class="ul-nav">
+                <li><a href="index.html">Product</a></li>
+                <li><a href="#">Car</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="newProduct.html">New Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="card">
+            <h1 class="card-title">New Product</h1>
+            <form onsubmit="validateForm(event)">
+                <fieldset class="card-content">
+                    <label>Name:</label>
+                    <input type="text" name="name" class="card-input">
+                    <div id="name-error" class="error-message"></div>
+        
+                    <label>Price:</label>
+                    <input type="number" name="price" class="card-input">
+                    <div id="price-error" class="error-message"></div>
+        
+                    <label>Inventory:</label>
+                    <input type="number" name="inventory" class="card-input">
+        
+                    <button type="submit" class="button-card">Create Product</button>
+        
+                    <div id="success-message" class="success-message"></div>
+                </fieldset>
+            </form>
+        </div>
+        
+        
+    </main>
+
+    <footer>
+        <p>Desarrollado por Diego Armando Villa</p>
+        <div class="redes">
+            <a href="https://github.com/DiegoArmandoXV" class="icons"> <img src="logos/github.webp" alt="github"></a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
